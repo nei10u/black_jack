@@ -54,7 +54,7 @@ def main(page: ft.Page):
         deck_view.update()
 
     start_game_button = ft.ElevatedButton(
-        text="开始", on_click=start_game, color="white"
+        text="开始", on_click=start_game, icon=ft.icons.CATCHING_POKEMON
     )
 
     def deal_card(e):
@@ -68,7 +68,7 @@ def main(page: ft.Page):
         deck_view.update()
 
     deal_card_button = ft.ElevatedButton(
-        text="发牌", on_click=deal_card, color="white"
+        text="发牌", on_click=deal_card, icon=ft.icons.SPOKE_OUTLINED
     )
 
     def hit_card(e):
@@ -81,7 +81,7 @@ def main(page: ft.Page):
             stand_card(e)
 
     user_hit_button = ft.ElevatedButton(
-        text="要牌", on_click=hit_card, color="white"
+        text="要牌", on_click=hit_card, icon=ft.icons.SQUARE_SHARP
     )
 
     def stand_card(e):
@@ -101,7 +101,7 @@ def main(page: ft.Page):
             alert_dialog("Dealer Win!!!")
 
     user_stand_button = ft.ElevatedButton(
-        text="不要", on_click=stand_card, color="white"
+        text="不要", on_click=stand_card, icon=ft.icons.CROP_SQUARE_SHARP
     )
 
     control_area_col = Column(
